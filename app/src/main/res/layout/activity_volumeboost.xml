@@ -29,13 +29,14 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="84dp"
-        android:layout_marginBottom="44dp"
         android:onClick="boostVolume"
         android:text="+"
-        app:layout_constraintBottom_toTopOf="@+id/decrease_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/volume_text" />
+        app:layout_constraintTop_toBottomOf="@+id/volume_text"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/decrease_button"
@@ -43,13 +44,14 @@
         android:layout_height="83dp"
         android:layout_marginStart="79dp"
         android:layout_marginEnd="84dp"
-        android:layout_marginBottom="212dp"
         android:onClick="decreaseVolume"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.699" />
 
     <Button
         android:id="@+id/increase_volume_button"
@@ -60,7 +62,7 @@
         android:text="Boost Volume"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.847" />
